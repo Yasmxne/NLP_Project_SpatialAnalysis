@@ -205,3 +205,20 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Data
+data/raw/
+data/processed/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Large outputs
+outputs/
+
+# Environment
+.env
+venv/
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
