@@ -26,16 +26,12 @@ To reproduce the experiments, you need to download the OCR transcriptions:
 1. Go to the `data/raw` folder:
    ```bash
    cd data/raw
+```
 
 Clone the following repository:
 
+```bash
 git clone https://gitlab.teklia.com/ckermorvant/arkindex_archelec.git
-
-Make sure the structure is:
-
-data/raw/
-├── archelect_search.csv
-└── arkindex_archelec/
-    └── text_files/
+```
 
 Once this is done, you can run the preprocessing and notebooks normally.
