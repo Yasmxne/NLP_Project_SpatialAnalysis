@@ -26,7 +26,7 @@ To reproduce the experiments, you need to download the OCR transcriptions:
 1. Go to the `data/raw` folder:
    ```bash
    cd data/raw
-```
+
 
 Clone the following repository:
 
