@@ -18,7 +18,7 @@ Analyze local vs national discourse using NLP
 pip install -r requirements.txt
 
 ## Install spaCy model
-python -m spacy download fr_core_news_sm
+python -m spacy download fr_core_news_md
 
 ## Data
 
