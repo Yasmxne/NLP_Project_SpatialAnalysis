@@ -8,3 +8,5 @@ torch>=2.0
 tqdm>=4.66
 unidecode>=1.3
 python-dateutil>=2.8
+geonamescache
+geopy

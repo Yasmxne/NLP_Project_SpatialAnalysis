@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 import zipfile
-
+import re
 
 def load_metadata(path):
     df = pd.read_csv(path)
@@ -60,3 +60,17 @@ def add_id_to_texts(df_texts):
 
 def merge_metadata_texts(df_meta, df_texts):
     return df_meta.merge(df_texts, on="id", how="inner")
+
+def clean_text(text):
+    text = str(text)
+
+    # enlever retours ligne
+    text = text.replace("\n", " ")
+
+    # enlever multiples espaces
+    text = re.sub(r"\s+", " ", text)
+
+    # enlever caractères bizarres OCR
+    text = re.sub(r"[^\w\s\-']", " ", text)
+
+    return text.strip()
