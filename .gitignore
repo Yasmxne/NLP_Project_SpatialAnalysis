@@ -210,9 +210,6 @@ __marimo__/
 # Notebooks checkpoints
 .ipynb_checkpoints/
 
-# Large outputs
-outputs/
-
 # Environment
 .env
 venv/
